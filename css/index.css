@@ -1,0 +1,170 @@
+*{margin: 0; padding: 0; line-height: 30px;
+   }
+ul{list-style: none;}
+a{text-decoration: none; color: #1f1f1f;}
+body{font-size: 14px; color: #1f1f1f; 
+   height: 5000px; font-family: 'Poppins','Noto Sans KR',  sans-serif;}
+/* height 세로값 나중에 스크롤 생기면 지워주기 */
+/* 1024 에서 반응 header-top없어짐 / 768에서 반응 아래 하단 메뉴 한줄에서 2줄로 바뀜
+
+ */
+ /* 
+width: 100% 로 너비를 화면에 꽉 채우고, 100vh로 높이를 뷰포트에 맞게 적용시켜 화면의 높이에 맞게 조정
+이때, height: auto 나 height: 100% 가 아닌 100vh로 준 이유는, div 에 높이가 들어가지 않을 경우
+이미지가 배경으로 들어가도 높이가 없기 때문에 원하는 결과가 나오지 않아서.) */
+/* #main_1{max-width: 100%;height:100vh; background: url(../images/bing-main_logo01.png) no-repeat center; background-size: cover;text-align: center; box-sizing: border-box; z-index: 1;} */
+ /* */
+/* #main_1{width: 100%; height: 100vh;background: url(../images/bing-main_logo01.png) no-repeat center; background-size: cover;text-align: center; display: block; z-index: -1;} */
+ /* 상단 헤더 시작 */
+#main_1{background: url(../images/bing-main_logo01.png) no-repeat center / cover; text-align: center; box-sizing: border-box;}
+#main_1 .top-header{padding:0px 80px; border-bottom: 1px solid #e7e7e7; box-sizing: border-box; }
+#main_1 .top-header .top-header-wrap {display:flex; justify-content: flex-end; align-items: center; text-align: center;}
+#main_1 .top-header .top-header-wrap ul{display:flex; align-items: center; justify-content: center; padding-left: 15px; text-align: center; position: relative;} 
+#main_1 .top-header .top-header-wrap ul li:nth-child(n+1){margin-left: 3px;}
+#main_1 .top-header .top-header-wrap ul li a{letter-spacing: -1px;}
+#main_1 .top-header ul li a img{vertical-align: middle;}
+#main_1 .top-header .top-header-wrap ul:nth-child(2)::before{
+    content: "";
+   background-color: #e7e7e7;;
+    width: 2px;
+    height: 9px;
+    position: absolute;
+    left:  9px;
+}
+/* 상단 헤더 끝 */
+
+/* header-s2 중앙 네비 시작 */
+.header{max-width: 100%;}
+.header .header-container{max-width: 100%;padding: 40px 80px;box-sizing: border-box; display: flex; justify-content: space-between; align-items: center;  margin: 0 auto; }
+/*  border-bottom: 1px solid #e7e7e7; */
+.header .header-container .header_S1{max-width: 100%; vertical-align: top; position: relative;}
+.header .header-container .header_s2{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: block;}
+    .header .header-container .header_s2 ul{display: flex; align-items: center; justify-content: space-between; padding-top: 3.5%; white-space: nowrap;}
+/* .header .header-container .header_s2 ul{display: flex; justify-content: space-around; align-items: center; margin: 0 auto;} */
+.header .header-container .header_s2 ul li{position: relative;
+    padding: 45px 80px 0 0; box-sizing: border-box;}
+.header .header-container .header_s2 ul li a{font-size: 20px; position: relative; padding: 0, 40px; box-sizing: border-box; letter-spacing: -0.09em;}
+/* header-s2 중앙 네비 끝 */
+
+/* /* header-s2 서브메뉴 */
+.s2_submenu{display: none;}
+/* /* header-s2 서브끝 */
+
+/* header-s3 우측 kr 시작 */ 
+.header_s3{max-width: 100%; display: flex; justify-content: space-between; align-items: center;}
+.header_s3 .hs3_lang{margin-right: 33px; cursor: pointer;}
+.header_s3 .hs3_lang ul{display: none;}
+.header_s3 .hs3_lang span:nth-child(1){font-weight: bold; font-size: 16px; letter-spacing: -0.5px;cursor: pointer;}
+.header_s3 .hs3_lang span:nth-child(2){max-width: 100%; vertical-align:top; margin-left:5px;}
+/*  header-s3 우측 kr 끝 */ 
+
+/* header-s3 햄버거 메뉴시작 */
+.header_s3{height: 100%; position: relative;}
+.header_s3 .hs3_lang{display: flex; align-items: center; justify-content: center;}
+.header_s3 .hs3_lang img{min-width: 100%; vertical-align: middle;}
+.header_s3 .hamberger{width: 26px; vertical-align: top;}
+.header_s3 .hamberger .hamberger_line{display: block;}
+.header_s3 .hamberger .hamberger_line:nth-child(1){width: 100%; height: 2px; background-color: #000; margin-top: 8px;}
+.header_s3 .hamberger .hamberger_line:nth-child(2){width: 100%; height: 2px; background-color: #000; margin-top: 8px;}
+.header_s3 .hamberger .hamberger_line:nth-child(3){width: 100%; height: 2px; background-color: #000; margin-top: 8px;}
+
+
+/* 햄버거 서브메뉴시작 */
+.hamberger_submenu{display: none;}
+/* 햄버거 서브메뉴시작 */
+/*  center logo 센터 로고 시작 */
+.center{position: relative;}
+.center_container .center_logo{margin: 0 auto; vertical-align: top;}
+/*  center logo 센터 로고 끝 */
+
+/* center search 중앙 서치창 시작 */ 
+.center_search{ max-width: 1020px; height: 80px; border-radius: 40px; box-shadow: 0px 5px 24.3px 2.7px rgba(0, 0, 0, 0.09);background-color: #fff; margin: 40px auto 0; justify-content: space-between;}
+.center_search .center_search_box{width: 100%; height: 100%; padding: 0 15px 0 55px; display: flex; align-items: center;justify-content: space-between;}
+.center_search .center_search_box input{width: 78%; height: 100%; padding-left: 30px; font-size: 17px; letter-spacing: -0.85; text-align-last: left; background: url(../images/bing-search_icon.png) no-repeat center left;border: 0px solid #000;}
+.center_search .center_search_box input:focus{outline: none;}
+.center_search .center_search_box .center_search_button{max-width: 180px;width: 22%;height:55px; color: #fff;font-size: 14px;font-weight: 500;letter-spacing: normal; border-radius: 27.5px; box-shadow: inset 0px 5px 10px 0 rgba(53, 53, 53, 0.11); background-image: linear-gradient(to top, #ed1c24, #e0462e);}
+/* center search 중앙 검색창 끝 */
+
+/* center searh keyword 센터 서치 키워드  시작 */
+.center_search_keyword {max-width: 100%; margin-top: 25px; font-family: "Binggrae";  }
+.center_search_keyword ul{width: 100%; height: 43px; display: flex;justify-content: center;align-items: center;}
+.center_search_keyword ul li{min-width: 120px;height: 37px;font-size: 12px; border: 1px solid #edecef; border-radius: 18.5px;
+padding: 0 20px; cursor: pointer; flex-basis: 15px; margin: 0 10px; text-align: center;
+}
+/* center searh keyword 센터 서치 검색 끝 */
+
+#main_2{max-width: 100%;background: url(../images/bing-main_logo02.png); padding: 140px; z-index: 1;}
+#main_2 .slick_slide2_1{max-width: 1650px; width: 100%; margin: 0 auto 140px; position: relative; }
+
+#main_2 .slick_slide2_1 h3{text-align: center; font-size: 38px; font-family: "Binggrae_bold",sans-serif; margin-bottom: 20px;}
+#main_2 .slick_slide2_1 .slide_ofh{ margin-bottom: 20px;}
+
+#main_2 .slick_slide2_1 .slide_ofh .slide1573{max-width: 1573px; width: 100%; padding: 0 7px; margin: 0 auto; border: 1px solid #fd0303; }
+#main_2 .slick_slide2_1 .slide_ofh .slide1573 .slick{padding: 20px 0; border: 1px solid #15ff00; justify-content: space-between; align-items: center; }
+#main_2 .slick_slide2_1 .slide_ofh .slide1573 .slick .slide-item{width: 260px; border: 1px solid #0026ff; }
+#main_2 .slick_slide2_1 .slide_ofh .slide1573 .slick .slide-item .slide-text{width: 100%; height: 43px; background-color: #f9f9f9; border-radius: 21px; color: #1f1f1f; margin-top: 12px; display: flex; align-items: center; justify-content: center;}
+
+/* #main_2{max-width: 100%;background: url(../images/bing-main_logo02.png); padding: 140px;}
+#main_2 .slick_slide2_1{max-width: 1650px; width: 100%; margin: 0 auto 140px; position: relative; }
+
+#main_2 .slick_slide2_1 h3{text-align: center; font-size: 38px; font-family: "Binggrae_bold",sans-serif; margin-bottom: 20px;}
+#main_2 .slick_slide2_1 .slide_ofh{ margin-bottom: 20px;}
+
+#main_2 .slick_slide2_1 .slide_ofh .slide1573{max-width: 1573px; width: 100%; padding: 0 7px; margin: 0 auto; border: 1px solid #fd0303; }
+#main_2 .slick_slide2_1 .slide_ofh .slide1573 .slick{padding: 20px 0; border: 1px solid #15ff00; justify-content: space-between; align-items: center; }
+#main_2 .slick_slide2_1 .slide_ofh .slide1573 .slick .slide-item{border: 1px solid #0026ff; } */
+
+
+
+/* 사이드 버튼 시작 */
+.btn_fixed{position: fixed; right: 30px;  bottom: 58px; }
+.btn_fixed .btn_shop{margin: 10px 0 5px 10px;}
+.btn_fixed .btn_shop a{ background-color: #fff;; color: #1b1b1b; font-weight: 500;box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.06), inset 0px 5px 10px 0 rgba(255, 255, 255, 0.14);}
+.btn_fixed .btn_side{margin-left: 10px;}
+.btn_fixed .btn_side .btn{width: 55px; height: 55px;position: relative;background: #000; border-radius: 50%;
+    display: flex;  justify-content: center;align-items: center; margin: 0 auto;text-align: center; cursor: pointer; font-size: 14px; position: absolute; top: 50%; left:50%;}
+.btn_fixed .btn_side img{max-width: 100%; vertical-align: top;}
+.btn_side .sidedown{position: absolute;transform: translate(-50%, -50%) rotateZ(180deg);}
+.btn_fixed .btn_side .sideup{display: none;}
+
+/* 사이드 버튼 끝 */
+
+/* 슬릭 슬라이드  */
+.slick img{width: 100%;border: 1px solid #c300ff; }
+.slick .slick-prev{left:-8px; z-index: 1;}
+.slick .slick-next{right:-20px;}
+.slick .slick-prev::before{background: url(../images/prev_arrow.png) no-repeat; color: transparent;}
+.slick .slick-next::before{background: url(../images/next_arrow.png) no-repeat;  color: transparent;}
+
+/* .header .header-warp{width: 100%; display: flex; justify-content: space-between; align-items: center; }
+.header .header-wrap .logo{width: 100%;} */
+
+/*
+.header .header-warp{min-width: 100%; display: flex; margin: 0 auto; align-items: center; justify-content: space-between;} */
+/* .header .header-warp .logo{display: block;}
+.header .header-warp .nav{display: flex; justify-content: space-between; align-items: center;} */
+
+
+/* img  인라인 블락요소이므로 vertical middle로 정렬 수평정렬 align-itmes는 flex에서 */
+/* #main_1 .top-header ul li a img{}
+
+
+/* 
+.top-header ul li:nth-child(1)::after{
+ position: absolute;
+ content: "";
+ width: 1px ; height: 8px; background-color: rgba(0, 0, 0, 0.1); }
+/* 반응형이라 max-width가로값 절대 위치 속성으로 텍스트 배치하면 패딩 속성 무시된다. 수직방향 배치는 되지만 절대 위치 배치여서 여백이 무시되는 특징 주의 */
+/* .top-header ul{ display: flex;justify-content: flex-end; align-items: center;
+ padding: 0px 80px;
+position: relative;} */
+
+/*span vertical mideld은 인라인 블락요소에서 align-itmes는 flex에서 */
+/* after적용할 해당 요소에 기준점por 잡아주기 content있어야동작 */
+
