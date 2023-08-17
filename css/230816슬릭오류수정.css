@@ -191,6 +191,7 @@ transform: rotate(-45deg);margin-top: 8px;
 }
 
 
+
 .hamberger_submenu .hm_container{width: 100%;}
 .hamberger_submenu .hm_container .hm_list{display: flex; justify-content: center;}
 .hamberger_submenu .hm_container .hm_list .hm_sublist{width: 255px; height: 460px;margin-left: 10px; padding: 50px 30px;
@@ -201,6 +202,14 @@ transform: rotate(-45deg);margin-top: 8px;
 .hm_sublist .ha_sub_ul li a{font-size: 18px;}
 
 /* 햄버거 서브 메뉴 끝 */
+/* .hm_list:hover  */
+/* color: #e0462e; */
+/* 햄버거 서브 호버 시작 */
+
+
+/* 햄버거 서브 호버 끝 */
+
+
 /* 햄버거 끝  */
 
 
@@ -238,31 +247,67 @@ padding: 0 20px; cursor: pointer;  text-align: center; font-weight: normal;lette
 
 
 /* 행복한 빙그레의 맛 슬릭 슬라이드1 시작 */ 
-#main_2{max-width: 100%;background: url(../images/bing-main_logo02.png);padding-bottom: 140px; }
-#main_2 .slick_slide2_1{max-width: 1650px; width: 100%; margin: 0 auto 140px; position: relative; }
+#main_2{max-width: 100%;background: url(../images/bing-main_logo02.png);}
 
-#main_2 .slick_slide2_1{ margin-bottom: 20px;}
-#main_2 .slick_slide2_1 .slide_ofh{margin-top: 30px;}
-#main_2 .slick_slide2_1 h3{font-size: 38px; font-family: "Binggrae_bold",sans-serif;  font-weight: bold;padding: 0 20px ;text-align: center; margin-bottom: 20px;}
-#main_2 .slick_slide2_1 .slide1573{width: 100%;}
-#main_2 .slick_slide2_1 .slide1573 .slick{padding: 20px 0;justify-content: space-between; align-items: center; }
-#main_2 .slick_slide2_1 .slide1573 .slick .slide-item{width: 260px;}
-#main_2 .slick_slide2_1 .slide1573 .slick .slide-item .slide-text{width: 100%; height: 43px; background-color: #f9f9f9; border-radius: 21px; color: #1f1f1f; margin-top: 12px; display: flex; align-items: center; justify-content: center;}
+#main_2 .slick_slide2_1{max-width: 1650px; width: 100%; margin: 0 auto 140px; position: relative; }
+#main_2 h3{font-size: 38px; font-family: "Binggrae_bold",sans-serif;  font-weight: bold;padding: 0 20px ;text-align: center; margin-bottom: 20px;}
+#main_2 .slide_ofh{margin-top: 30px;}
+#main_2 .slide1573{width: 100%;}
+#main_2 .slide1573 .slick{padding: 20px 0;justify-content: space-between; align-items: center; }
+#main_2 .slide1573 .slick .slide-item{width: 260px;}
+#main_2 .slide1573 .slick .slide-item .slide-text{width: 100%; height: 43px; background-color: #f9f9f9; border-radius: 21px; color: #1f1f1f; margin-top: 12px; display: flex; align-items: center; justify-content: center;}
+
+#main_2 .slide1573 .slick .slide-item .view{
+    display: none;
+}
+
+
+#main_2 .slide1573 .slick .slide-item:hover .slide-text{
+    display: none;
+}
+
+#main_2 .slide1573 .slick .slide-item:hover .view{
+    display: block;
+    background-image: linear-gradient(to top, #ed1c24, #e0462e);
+    width: 100%; height: 43px;  color: #fff; display: flex; align-items: center; justify-content: center;
+    }
+
+
+
+
+
+
 /* 행복한 빙그레의 맛 슬릭 슬라이드1 끝 */
 
 /* 브랜드 슬릭 슬라이드2 시작*/
-#main2_2 .slick_slide2_2{max-width: 1650px; width: 100%; margin: 0 auto 140px; position: relative;}
-#main_2 .slick_slide2_2 .slide_ofh{margin-top: 30px;}
-#main2_2 .slick_slide2_2 h3{font-size: 38px; font-family: "Binggrae_bold",sans-serif;  font-weight: bold;padding: 0 20px ;text-align: center; margin-bottom: 20px;}
 
-#main2_2 .slick_slide2_2 .slide1573{width: 100%;}
-#main2_2 .slick_slide2_2 .slide1573 .slick{padding: 20px 0; justify-content: space-between; align-items: center; }
-#main2_2 .slick_slide2_2 .slide1573 .slick .slide-item{width: 260px;}
-#main2_2 .slick_slide2_2 .slide1573 .slick .slide-item .slide-text{width: 100%; height: 43px; background-color: #f9f9f9; border-radius: 21px; color: #1f1f1f; margin-top: 12px; display: flex; align-items: center; justify-content: center;}
+
+#main2_2 .slick_slide2_1 .slide1573 .slick .slide-item a{
+    border: solid 1px #edecef ;
+    background-color: #fff;
+    position: relative;
+    display: block;
+    height: 250px;
+    border-radius: 30px;
+ 
+}
+
+#main2_2 .slick_slide2_1 .slide1573 .slick .slide-item img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+    
+}
+
+
+/* #main2 .slick_slide2_2 .slide1573 .slick .slide-item .slide-text{width: 100%; height: 43px; background-color: #f9f9f9; border-radius: 21px; color: #1f1f1f; margin-top: 12px; display: flex; align-items: center; justify-content: center;} */
 /*브랜드 슬릭 슬라이드2끝 */
 
 /* 슬릭 슬라이드  */
+
 .slick img{width: 100%;}
+
 .slick .slick-prev{left:-8px;z-index: 1;}
 .slick .slick-next{right:-20px;}
 .slick .slick-prev::before{background: url(../images/prev_arrow.png) no-repeat; color: transparent;}
@@ -273,23 +318,34 @@ padding: 0 20px; cursor: pointer;  text-align: center; font-weight: normal;lette
     padding: 0px 7px;
     box-sizing: border-box;
 }
-.slick_slide2_1 .arrow > div{
-    position: absolute;
-    top: 50%; transform: translateY(-50%);
-}
-.slick_slide2_1 .prev{left: 0;}
-.slick_slide2_1 .next{right: 0;}
-.slick-slide > div{
-    margin:0 9px;
-}
-.arrow .slick-disabled{opacity: 0.1;}
-
 .content-slick .slick-list {
     max-width: 1573px;
     margin:0 auto;
     padding: 0px 7px;
     box-sizing: border-box;
 }
+.slick_slide2_1 .arrow > div{
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    cursor: pointer;
+}
+.slick_slide2_2 .arrow > div{
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    cursor: pointer;
+}
+.slick_slide2_1 .prev{left: 0;}
+.slick_slide2_1 .next{right: 0;}
+.slick-slide > div{
+    margin:0 9px;
+}
+/* 복사 */
+.slick_slide2_2 .prev{left: 0;}
+.slick_slide2_2 .next{right: 0;}
+.slick-slide > div{
+    margin:0 9px;
+}
+.arrow .slick-disabled{opacity: 0.1;}
 
 /* 슬릭 슬라이드 끝 */
 
@@ -363,47 +419,50 @@ font-size:  "Binggrae_bold";
 }
 .faq_box .faq_list span{font-size: 18px; line-height: 1.4; color: inherit;}
 .faq_box .faq_list a{
-
 box-shadow: inset 0px 5px 10px 0 rgba(26, 26, 26, 0.14);
 width: 47px;
 height: 47px;
 background-color: #e0462e;
 border-radius: 23px;
-visibility: hidden;
+opacity: 0;
 }
 .faq_box .faq_list a img{vertical-align: bottom;}
 /* 자주묻는 질문 끝 */
 /* 자주묻는 질문 호버 시작 */
 .faq_list:hover {font-weight: bold;  transition: all 0.5s ease;}
-.faq_list:hover a{visibility: visible; transition: all 0.5s ease;}
+.faq_list:hover a{opacity: 1; transition: all 0.5s ease; }
+
 /* 자주묻는 질문 호버 끝*/
 /* 신고 시작 */
-#main4{padding-bottom: 180px;}
+#main4{padding-bottom: 140px;}
 #main4 h3{font-size: 38px; font-weight: bold; line-height: 1.45; letter-spacing: -1.9px; text-align: center;
     font-family: "Binggrae_Bold", sans-serif; margin-bottom: 40px;}
 
-.report_warp{width: 1310px; display: flex; margin: 0 auto;  justify-content: space-between;
-    margin-top: 30px; align-items: center;}
+.report_warp{width: 1310px; display: flex; margin: 0 auto;  justify-content: space-between; align-items: center;
+    margin-top: 30px;  position: relative;}
 
-.report_warp .report{     
+#main4 .report_warp .report{   
+      
     background-color: #f9f9f9;
     width: 44.5%;
     height: 120px;
     border-radius: 30px;
     box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.08);
-    word-break: keep-all; 
-    
+
+
 } 
 
-.report_warp .report p{font-size: 20px; line-height: 1.63; letter-spacing: -0.09em; 
-    text-align: center; } 
+.report_warp .report p{font-size: 20px; line-height: 1.63;text-align: center;
+line-height: 1.63;} 
 .report_warp .report a{
     width: 160px; height: 43px; border: solid 1px rgba(224, 223, 226, 0.6); border-radius: 21.5px;
     background-image: linear-gradient(to top, #ed1c24, #e0462e);
     color: #fff;
     box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.03);
     display: flex; align-items: center; justify-content: center; line-height: 1.63;  margin: 0 auto;
-    font-size: 14px; font-weight: 500; cursor: pointer;
+    font-size: 14px; font-weight: 500;
+  
+
 }
 .report_warp .A{padding: 60px 25px 58px;}
 .report_warp .B{ padding: 60px 25px 58px;}
@@ -423,13 +482,15 @@ visibility: hidden;
 #footer .footer_2 ul li span{font-size: 17px; font-weight: 300; color: rgba(255, 255, 255, 0.7);}
 #footer .footer_2 ul li+li{margin-top: 10px;}
 
-#footer .footer_3 {display: flex; justify-content: space-between; align-items: center;}
+#footer .footer_3 {display: flex; justify-content: space-between; align-items: center; margin: 0 auto;}
 #footer .footer_3 p{font: 1z 4px; letter-spacing: -0.15px; color: rgba(255, 255, 255, 0.2);}
-#footer .footer_3 .sns ul{display: flex; justify-content: center;align-items: center; margin-right: 50px; }
+#footer .footer_3 .sns{margin-right: 5%;}
+#footer .footer_3 .sns ul{display: flex; justify-content: center;align-items: center;}
+
 #footer .footer_3 .sns ul li{width: 70px; height: 70px; background-color: #1b1b1b; border-radius: 50%; 
     box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.36), inset 0px 4px 10.8px 2.2px rgba(73, 73, 73, 0.11);
     display: flex; align-items: center; justify-content: space-between; 
-    
+    margin-left: 15px;
 }
 
 #footer .footer_3 .sns ul li img{vertical-align: middle; margin: 0 auto;}
@@ -439,10 +500,11 @@ visibility: hidden;
 
 /* 사이드 버튼 시작 */
 /* 헬프 버튼 시작 */
-.btn_fixed{width: 80px; height: 219px; position: fixed; right: 30px; bottom:8%; z-index: 100; }
+.btn_fixed{width: 80px; height: 219px; position: fixed; right: 30px; bottom:58px; z-index: 100; }
 .btn_fixed .btn_helf{position: relative; padding-left: 10px; cursor: pointer;}
 
-.btn_fixed .btn_helf img{animation: updown 2s infinite ease-in-out;}
+.btn_fixed .btn_helf img{animation: updown 2s infinite ease-in-out;
+vertical-align: top;}
 @keyframes updown{ 
     20%{transform: translateY(0px);}
     40%{transform: translateY(10px);}
@@ -451,7 +513,13 @@ visibility: hidden;
     100%{transform: translateY(0px);}
    }
    .btn_fixed .btn_helf p{display: none;}
-   .btn_fixed .btn_helf:hover p{display: block; position: absolute; width: 160px; height: 45px; border-radius: 22.5px; box-shadow: 0px 3px 7px 0 rgb(0 0 0 / 5%); background-color: #fff; font-weight: bold; text-align: center; top: 50%; right: 82px;}
+   /* .btn_fixed .btn_helf:hover p */
+   .btn_fixed .btn_helf:hover p{width: 160px; height: 45px; 
+    display: flex;align-items: center;justify-content: center;
+     position: absolute; border-radius: 22.5px; box-shadow: 0px 3px 7px 0 rgb(0 0 0 / 5%); background-color: #fff; font-weight: bold; 
+    top: 50%; right: 82px; transform: translateY(-50%);
+   
+   }
     
 
 
@@ -465,11 +533,13 @@ visibility: hidden;
 /* 샵, 위아래 버튼 시작 */
 
 .btn_fixed .btn_shop{ background-color: #fff; color: #1b1b1b; font-weight: 500;box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.06),
-    inset 0px 5px 10px 0 rgba(255, 255, 255, 0.14); width: 55px; height: 55px; border-radius: 50%;
-    display: flex;  justify-content: center;align-items: center; margin: 0 auto;text-align: center; cursor: pointer; font-size: 14px; position: absolute; left:28%;}
+    inset 0px 5px 10px 0 rgba(255, 255, 255, 0.14); width: 55px; height: 55px; border-radius: 50%; 
+        display: flex;  justify-content: center;align-items: center; cursor: pointer; font-size: 14px; position: absolute; transform: translateY(50%);
+         left:28%;}
 
     .btn_fixed .btn_side{width: 55px; height: 55px; border-radius: 50%; 
-        display: flex;  justify-content: center;align-items: center; margin: 0 auto;text-align: center; cursor: pointer; font-size: 14px; position: absolute; background-color: #000000; position: absolute; left: 22px; bottom: -5px;
+        display: flex;  justify-content: center;align-items: center; margin: 0 auto;text-align: center; cursor: pointer; font-size: 14px; position: absolute; background-color: #000000; position: absolute; left: 22px; 
+        bottom: -10%;
     }
     .btn_fixed .btn_side img:nth-child(1){transform: scaleY(-1); }
   
