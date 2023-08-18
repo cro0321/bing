@@ -5,17 +5,17 @@ const $hover = document.querySelectorAll(".header .header-container .header_s2 .
 //  console.log($hover)
 
 const $slick_hover = document.querySelectorAll("#main_2 .slide1573 .slick .slide-item")
-console.log($slick_hover)
+// console.log($slick_hover)
 const $slick_hover_A = document.querySelectorAll("#main_2 .slide1573 .slick .slide-item a")
 
-console.log($slick_hover)
+
 const $sublist = document.querySelectorAll(".header .header-container .header_s2 .s2_menu .sublist")
 // console.log($sublist)
 
 const up_down = document.querySelector(".btn_fixed .btn_side")
 
 
-// })
+// 
 
 
 
@@ -51,7 +51,7 @@ const up_down = document.querySelector(".btn_fixed .btn_side")
         
         $('.slick.menu-content-slick').on('afterChange', function() {
             var dataId = $('.slick-current').attr("data-slick-index");    
-            console.log(dataId);
+            // console.log(dataId);
             if(dataId == 0){
                 $("#arrow_prev").addClass("slick-disabled");
             }else if(dataId == 3){
@@ -63,7 +63,7 @@ const up_down = document.querySelector(".btn_fixed .btn_side")
         });
         $('.slick.menu-content2-slick').on('afterChange', function() {
             var dataId = $('.slick-current').attr("data-slick-index");    
-            console.log(dataId);
+            // console.log(dataId);
             if(dataId == 0){
                 $("#arrow_prev").addClass("slick-disabled");
             }else if(dataId == 3){
@@ -209,14 +209,14 @@ up_down.addEventListener("click", function(){
     if(postion >= 100){
         // 클릭시 최상단으로 이동
         window.scrollTo({
-            top: 0,
-            behavior: "smooth"
+        top: 0,
+        behavior: "smooth"
         });
     }else{
         // 클릭시 최하단으로 이동
         window.scrollTo({ 
-            top: document.body.scrollHeight, 
-            behavior: "smooth" 
+        top: document.body.scrollHeight, 
+        behavior: "smooth" 
         });
     }
     
@@ -230,16 +230,44 @@ let ham_sub = document.querySelector(".hamberger_submenu");
 
 ham.addEventListener("click", function(){
     // 목표 1.햄버거 버튼 클릭했을때 햄버거 메뉴가 나타나고 사라지게 하기. 
+
     ham_sub.classList.toggle("on");
     //목표 2. 햄버거 버튼 메뉴가X 표시가 되기.
     ham.classList.toggle("on");
     // 목표3. 햄버거 메뉴나왔을때 스크롤바 사라지게하기
-    //    if(ham == "hamberger_submenu on"){
-        //     document.body.style.overflow="hidden";
-        //    }else{
-            //     overflow: visible;
-            //    }
+  
+            // if(ham_sub.style.opacity = "1"){
+            //        document.documentElement.style.overflowY = "hidden";
+            //     }else{
+                
+            //         }
+        
         })
+
+        // if(ham_sub.style.opacity = "1"){
+        //     ham_sub.classList.add("on");
+        //     ham.classList.add("on");
+        //        document.documentElement.style.overflowY = "hidden";
+        //     }else{
+        //         ham_sub.classList.remove("on");
+        //         ham.classList.remoe("on");
+        //          document.documentElement.style.overflowY = "auto";
+        //         }
+    
+        /*
+           
+    if(ham_sub.style.opacity = "1"){
+        ham_sub.classList.add("on");
+        ham.classList.add("on");
+           document.documentElement.style.overflowY = "hidden";
+        }else{
+            ham_sub.classList.remove("on");
+            ham.classList.remoe("on");
+             document.documentElement.style.overflowY = "auto";
+            }
+
+        })
+        */
         
 
 
